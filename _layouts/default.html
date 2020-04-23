@@ -29,7 +29,12 @@
   });
   // shuffleInstance.filter('animal');
   $("#all").on("click", function(){
-     shuffleInstance.filter(['ansprache','schnecke','einmal','wir','absage','jetzt']);
+     shuffleInstance.filter(['ansprache','schnecke','einmal','wir','absage','jetzt','hier']);
+     $('.button').removeClass('btn-active');
+     $(this).addClass('btn-active');
+  });
+  $("#btn-eighth").on("click", function(){
+     shuffleInstance.filter('hier');
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
   });
